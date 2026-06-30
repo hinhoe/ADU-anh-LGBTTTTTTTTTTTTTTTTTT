@@ -1,0 +1,20 @@
+namespace Algorithm_Benchmark_Tool
+{
+    [default_interface]
+    runtimeclass SidebarControl : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        SidebarControl();
+
+    // MainWindow đọc các giá trị này khi Start
+    String ArraySizeText{ get; };
+    String ManualDataText{ get; };
+    Boolean UseBubble{ get; };
+    Boolean UseInsertion{ get; };
+    Boolean UseQuick{ get; };
+    Boolean UseMerge{ get; };
+    Boolean UseShell{ get; };
+
+    event Windows.Foundation.EventHandler<Boolean> RandomDataRequested;
+    event Windows.Foundation.EventHandler<Boolean> StartRequested;
+}
+}

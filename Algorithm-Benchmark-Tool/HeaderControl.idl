@@ -1,0 +1,12 @@
+namespace Algorithm_Benchmark_Tool
+{
+    [default_interface]
+    runtimeclass HeaderControl : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        HeaderControl();
+
+        event Windows.Foundation.EventHandler<Boolean> StartRequested;
+        event Windows.Foundation.EventHandler<Boolean> PauseRequested;
+        event Windows.Foundation.EventHandler<Boolean> ResetRequested;
+    }
+}
